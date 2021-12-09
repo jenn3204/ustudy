@@ -1,0 +1,56 @@
+header {
+  background-color: $main_blue;
+  width: 100%;
+  padding: 1rem;
+}
+
+#header_logo {
+  width: 150px;
+  height: 65px;
+}
+
+#burger_icon {
+  font-size: 2rem;
+  color: $white;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+
+  a {
+    color: $white;
+    font-weight: medium;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  a:hover {
+    color: $white;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #burger_icon {
+    display: none;
+  }
+
+  nav#nav {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+  }
+}

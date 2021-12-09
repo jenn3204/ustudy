@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: $header_font;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: $paragraph_font;
+  font-size: 1.7rem;
+}
+
+p {
+  font-family: $paragraph_font;
+  font-size: 1rem;
+}
+
+a {
+  font-family: $paragraph_font;
+  color: $blue-lighter;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $blue-darker;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: $main_blue;
+  font-family: $paragraph_font;
+  font-weight: 500;
+  font-size: 1rem;
+  color: $white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: $blue-darker;
+}

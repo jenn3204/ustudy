@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  color: #9ed2f0;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7c98a8;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #79a0b7;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #f5f5f5;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7c98a8;
+}
+
+header {
+  background-color: #79a0b7;
+  width: 100%;
+  padding: 1rem;
+}
+
+#header_logo {
+  width: 150px;
+  height: 65px;
+}
+
+#burger_icon {
+  font-size: 2rem;
+  color: #f5f5f5;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+nav a {
+  color: #f5f5f5;
+  font-weight: medium;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+nav a:hover {
+  color: #f5f5f5;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 800px) {
+  #burger_icon {
+    display: none;
+  }
+
+  nav#nav {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
