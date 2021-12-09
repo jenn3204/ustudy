@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: $white;
+}
+
 h1 {
   font-family: $header_font;
   font-size: 2rem;
@@ -14,8 +18,10 @@ h2 {
   font-size: 1.7rem;
 }
 
-p {
+p,
+label {
   font-family: $paragraph_font;
+  color: $text-color;
   font-size: 1rem;
 }
 
@@ -48,4 +54,8 @@ button {
 
 button:hover {
   background-color: $blue-darker;
+}
+
+main {
+  margin-top: 120px;
 }
