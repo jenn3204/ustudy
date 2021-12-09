@@ -2,6 +2,14 @@ document.addEventListener("DOMContentLoaded", start);
 
 function start() {
     document.querySelector("#burger_icon").addEventListener("click", burgerMenu); 
+
+    document.querySelector("#log_in_student").addEventListener("click", ()  =>{
+        location.href = "window.location.href=home.html"; 
+    })
+
+document.querySelector("#log_in_teacher").addEventListener("click", ()  =>{
+        location.href = "window.location.href=teacher_home.html"
+    })
 }
 
 function burgerMenu() {

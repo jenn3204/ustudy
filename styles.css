@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1 {
@@ -76,17 +77,26 @@ header {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   margin: 0 auto;
 }
+
 nav a {
   color: #f5f5f5;
   font-weight: medium;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
+
 nav a:hover {
   color: #f5f5f5;
   font-weight: 500;
@@ -96,7 +106,6 @@ nav a:hover {
   #burger_icon {
     display: none;
   }
-
   nav#nav {
     display: block;
     position: absolute;
@@ -105,4 +114,47 @@ nav a:hover {
   }
 }
 
+body#landing_body {
+  background: #79a0b7;
+}
+
+div#log_in_div {
+  background: #f5f5f5;
+  height: 30vh;
+  width: auto;
+  padding: 5vh;
+  border-radius: 2vh;
+  margin-bottom: 5vh;
+  -webkit-box-shadow: #7193a7 10px 10px;
+          box-shadow: #7193a7 10px 10px;
+}
+
+form {
+  margin-top: 4vh;
+  text-align: center;
+}
+
+input {
+  margin: 1vh;
+}
+
+#log_in_logo {
+  height: 20vw;
+}
+
+div#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1fr;
+      -ms-flex: 1fr 2fr 1fr;
+          flex: 1fr 2fr 1fr;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=styles.css.map */
