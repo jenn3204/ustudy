@@ -1,0 +1,47 @@
+div#home_container {
+  display: grid;
+  grid-template-columns: auto;
+
+  section {
+    border-style: solid;
+    border-width: 1px;
+    margin: 2vh;
+    padding: 2vh;
+  }
+
+  article {
+    border-bottom: solid 1px rgb(184, 184, 184);
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+  }
+
+  h3 {
+    padding-bottom: 2vh;
+  }
+
+  li {
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div#home_container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "post assignments"
+      "post events";
+
+    #post {
+      grid-area: post;
+    }
+
+    #assignments {
+      grid-area: assignments;
+    }
+
+    #events {
+      grid-area: events;
+    }
+  }
+}

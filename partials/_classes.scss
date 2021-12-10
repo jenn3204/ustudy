@@ -1,5 +1,5 @@
 #classes {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -8,18 +8,21 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  border-top: 1px solid $blue-darker;
+  margin-top: 1rem;
 }
 
 .class {
-  width: 380px;
-  height: 200px;
+  //   width: 380px;
+  width: 100vw;
+  height: 170px;
   background-color: $beige;
   border-radius: 5px;
   cursor: pointer;
   box-shadow: #33333340 3px 3px;
   margin: 1rem 1rem 1rem 0;
   padding: 1rem;
-  flex-basis: 350px;
+  flex-basis: 400px;
   flex-grow: 0;
   text-align: center;
 
