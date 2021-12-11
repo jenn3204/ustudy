@@ -119,7 +119,7 @@ nav {
 }
 
 nav a {
-  color: #fefbef;
+  color: white;
   font-weight: medium;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
@@ -280,6 +280,7 @@ div#container {
 
 .content {
   padding: 1rem;
+  text-align: center;
 }
 
 .list-item {
@@ -322,11 +323,82 @@ div#container {
   border: 1px solid #333333;
   padding: 2rem;
   margin: 2rem 0;
-  height: 800px;
+  height: 600px;
 }
 
 .material h3 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+table {
+  text-align: start;
+  border: 1px solid #333333;
+}
+
+table th,
+table td {
+  padding: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #333333;
+}
+
+.classbtn {
+  margin: 2rem auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #33333370;
+  z-index: 200;
+}
+
+.modal form {
+  background-color: #fefbef;
+  width: 90vw;
+  max-width: 400px;
+  padding: 3rem;
+  margin: 10rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  border-radius: 5px;
+}
+
+.modal form input {
+  margin: 0;
+}
+
+.modal form h3 {
+  margin-bottom: 0.5rem;
+}
+
+.modal form label {
+  margin: 0.5rem 0;
+}
+
+.modal form button {
+  margin: 1rem 0;
+}
+
+.modal form #um_close,
+.modal form #ua_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {
@@ -338,12 +410,16 @@ div#container {
     left: 25vw;
     top: 195px;
     width: calc(100% - 25vw);
-    padding: 4rem;
+    padding: 2rem;
     border: 2px solid #f7e7cb;
     min-height: calc(100% - 192px);
   }
   .arrow {
     display: none;
+  }
+  .material {
+    height: 800px;
+    margin: 3rem;
   }
 }
 

@@ -20,7 +20,12 @@ function start() {
     if (document.querySelector(".class") ) {
         document.querySelectorAll(".class").forEach(square => {
             square.addEventListener("click", () => {
-                location.href = "class.html"; 
+                if (square.classList.contains("private")) {
+                    location.href = "class_private.html"; 
+                } else {
+                    location.href = "class.html"; 
+                }
+                
             })
     
         })
@@ -61,6 +66,17 @@ function start() {
         })
 
     }
+
+    if (document.querySelector("#upload_material")) {
+        document.querySelector("#um_btn").addEventListener("click", showUmModal); 
+
+    }
+
+    if (document.querySelector("#upload_assignment_modal")) {
+        document.querySelector("#ua_btn").addEventListener("click", showUaModal); 
+
+    }
+    
 }
 
 
@@ -112,4 +128,30 @@ function showAssignments(title) {
             content.classList.add("hidden"); 
         }
     })
+}
+
+function showUmModal() {
+    document.querySelector("#upload_material").classList.remove("hidden");
+    document.querySelector("#um_close").addEventListener("click", () => {
+        document.querySelector("#upload_material").classList.add("hidden");
+    }) 
+
+    document.querySelector("#upload_material_btn").addEventListener("click", (event) => {
+        event.preventDefault(); 
+        document.querySelector("#upload_material").classList.add("hidden");
+    })
+
+}
+
+function showUaModal() {
+    document.querySelector("#upload_assignment_modal").classList.remove("hidden");
+    document.querySelector("#ua_close").addEventListener("click", () => {
+        document.querySelector("#upload_assignment_modal").classList.add("hidden");
+    }) 
+
+    document.querySelector("#upload_assignment_btn").addEventListener("click", (event) => {
+        event.preventDefault(); 
+        document.querySelector("#upload_assignment_modal").classList.add("hidden");
+    })
+
 }
