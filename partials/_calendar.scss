@@ -1,0 +1,53 @@
+h1 {
+  text-align: center;
+}
+
+.calendar_time {
+  font-size: 2vh;
+  border-bottom: 1px solid $beige;
+  padding-bottom: 1vh;
+  padding-top: 2vh;
+
+  time {
+    font-weight: 700;
+  }
+}
+
+#book_meeting_button {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  #book_meeting_button {
+    width: 25vw;
+  }
+
+  #calendar_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  #calendar_section .container {
+    margin-right: 0.3rem;
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    .info_title {
+      margin: 0;
+    }
+  }
+
+  .calendar_content {
+    height: 550px;
+    border: 1px solid $beige;
+    p {
+      padding: 0.5rem;
+      height: calc(550px / 12);
+    }
+  }
+}

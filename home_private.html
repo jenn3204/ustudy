@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>uStudy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="home.html">
+            <img id="header_logo" src="img/ustudy-logo.png" alt="logo">
+        </a>
+        <p id="burger_icon">☰</p>
+        <nav id="nav" class="hidden">
+            <a href="home_private.html">Home</a>
+            <a id="classes_nav" href="classes_private.html">Classes</a>
+            <a href="calendar_private.html">Calendar</a>
+            <a href="">Messages</a>
+            <a href="">Profile</a>
+            <a id="admin_nav" href="">Admin</a>
+            
+            <a href="index.html">Log out</a>
+        </nav>
+        <div id="classes_dropdown" class="hidden">
+            <a href="class_private.html?class=history_2.H">History (2.H)</a>
+            <a href="class_private.html?class=history_1.C">History (1.C)</a>
+            <a href="class_private.html?class=english_2.H">English (2.H)</a>
+            <a href="class_private.html?class=english_1.C">English (1.C)</a>
+        </div>
+        <div id="admin_dropdown" class="hidden">
+            <a href="">Settings</a>
+            <a href="">Change user rights</a>
+        </div>
+    </header>
+<main>
+    <div id="home_container">
+    <section id="post">
+        <h2>Newest post</h2>
+        <article>
+            <h3>New covid-19 restrictions</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ex, veniam? In reprehenderit nulla non! At optio perferendis 
+                accusantium nihil qui tempora! Dolore exercitationem itaque 
+                minima dolorum officia reiciendis pariatur. Odio.</p>
+        </article>
+        <article>
+            <h3>Library is closed this thursday</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ex, veniam? In reprehenderit nulla non! At optio perferendis 
+                accusantium nihil qui tempora! Dolore exercitationem itaque 
+                minima dolorum officia reiciendis pariatur. Odio.</p>
+        </article>
+        <article>
+            <h3>This weeks menu at the canteen</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ex, veniam? In reprehenderit nulla non! At optio perferendis 
+                accusantium nihil qui tempora! Dolore exercitationem itaque 
+                minima dolorum officia reiciendis pariatur. Odio.</p>
+        </article>
+    </section>
+    <section id="assignments"> <!---Burde vi have kaldt den noget mere generelt-->
+        <h2>New request</h2>
+        <article>
+            <h3>Meeting</h3>
+            <time datetime="2021-12-01 13:45">📅 01. December 2021 - 13.45</time>
+            <p>With <em>Mads Larsen (2.H)</em> at <em>Pacific Meeting Room</em>            
+            </p>
+        </article>
+        <article>
+            <h3>Teacher conference</h3>
+            <time datetime="2021-02-05 10:00">📅 05. February 2022 - 10.00</time>
+            <p>With <em>Janne Fredriksen (Lektor)</em> at <em>Atlantic Meeting Room</em>            
+            </p>
+        </article>
+        <article>
+            <h3>Meeting</h3>
+            <time datetime="2021-12-10 14:20">📅 10. December 2021 - 14.20</time>
+            <p>With <em>Laura M. Jensen (1.C)</em> at <em>Arctic Meeting Room</em>            
+            </p>
+        </article>
+    </section>
+    <section id="events">
+        <h2>Upcoming events</h2>
+        <article>
+            <h3>Friday bar</h3>
+            <time datetime="2022-01-07 16:30">📅 7. January 2022 - 16.30-00.00</time> 
+            <address>📍 Fredericiagade 15, 1310 København</address>
+            <p>Have fun with your fellow students at the Friday Bar.</p>
+        </article>
+        <article>
+            <h3>Friday bar</h3>
+            <time datetime="2022-01-07 16:30">📅 7. January 2022 - 16.30-00.00</time> 
+            <address>📍 Fredericiagade 15, 1310 København</address>
+            <p>Have fun with your fellow students at the Friday Bar.</p>
+        </article>
+        <article>
+            <h3>Friday bar</h3>
+            <time datetime="2022-01-07 16:30">📅 7. January 2022 - 16.30-00.00</time> 
+            <address>📍 Fredericiagade 15, 1310 København</address>
+            <p>Have fun with your fellow students at the Friday Bar.</p>
+        </article>
+    </section>
+    </div>
+
+
+</main>
+<footer><p>&copy; uStudy </p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

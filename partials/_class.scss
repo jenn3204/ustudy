@@ -1,4 +1,5 @@
-#class_title {
+#class_title,
+#calendar_title {
   padding: 0 1rem 2rem 1rem;
 }
 
@@ -28,7 +29,6 @@
 
 .content {
   padding: 1rem;
-  text-align: center;
 }
 
 .list-item {
@@ -102,7 +102,7 @@ table {
     background-color: $white;
     width: 90vw;
     max-width: 400px;
-    padding: 3rem;
+    padding: 3rem 3rem 0 3rem;
     margin: 10rem auto;
     display: flex;
     flex-direction: column;
@@ -148,7 +148,7 @@ table {
     top: 195px;
     width: calc(100% - 25vw);
     padding: 2rem;
-    border: 2px solid $beige;
+    border: 1px solid $text-color;
     min-height: calc(100% - 192px);
   }
 

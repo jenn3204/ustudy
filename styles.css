@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #fefbef;
+  background-color: #f9f8f4;
 }
 
 h1 {
@@ -57,12 +57,18 @@ a:hover {
   display: none;
 }
 
+.button_container {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
 button {
   background-color: #79a0b7;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  color: #fefbef;
+  color: #f9f8f4;
   padding: 0.7rem;
   border: none;
   border-radius: 5px;
@@ -75,6 +81,19 @@ button:hover {
 
 main {
   margin-top: 120px;
+  min-height: calc(100vh - 120px - 50px);
+}
+
+footer {
+  width: 100%;
+  background-color: #79a0b7;
+  text-align: center;
+  padding: 1rem;
+  height: 50px;
+}
+
+footer p {
+  color: #f9f8f4;
 }
 
 header {
@@ -91,7 +110,7 @@ header {
 
 #burger_icon {
   font-size: 2rem;
-  color: #fefbef;
+  color: #f9f8f4;
   cursor: pointer;
   position: absolute;
   top: 2rem;
@@ -125,7 +144,29 @@ nav a {
 }
 
 nav a:hover {
-  color: #fefbef;
+  color: #f9f8f4;
+  font-weight: 500;
+}
+
+.dropdown_style {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #79a0b7;
+  padding: 1rem;
+}
+
+.dropdown_style a {
+  color: #f9f8f4;
+  margin: 0.2rem;
+}
+
+.dropdown_style a:hover {
   font-weight: 500;
 }
 
@@ -146,7 +187,7 @@ body#landing_body {
 }
 
 div#log_in_div {
-  background: #fefbef;
+  background: #f9f8f4;
   height: 30vh;
   width: auto;
   padding: 5vh;
@@ -236,7 +277,8 @@ div#container {
           transform: scale(1.01);
 }
 
-#class_title {
+#class_title,
+#calendar_title {
   padding: 0 1rem 2rem 1rem;
 }
 
@@ -280,7 +322,6 @@ div#container {
 
 .content {
   padding: 1rem;
-  text-align: center;
 }
 
 .list-item {
@@ -357,10 +398,10 @@ table td {
 }
 
 .modal form {
-  background-color: #fefbef;
+  background-color: #f9f8f4;
   width: 90vw;
   max-width: 400px;
-  padding: 3rem;
+  padding: 3rem 3rem 0 3rem;
   margin: 10rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,7 +452,7 @@ table td {
     top: 195px;
     width: calc(100% - 25vw);
     padding: 2rem;
-    border: 2px solid #f7e7cb;
+    border: 1px solid #333333;
     min-height: calc(100% - 192px);
   }
   .arrow {
@@ -431,16 +472,20 @@ div#home_container {
 }
 
 div#home_container section {
-  border-style: solid;
-  border-width: 1px;
-  margin: 2vh;
-  padding: 2vh;
+  border-bottom: 1px solid #333333;
+  padding: 1rem;
 }
 
 div#home_container article {
   border-bottom: solid 1px #b8b8b8;
   padding-bottom: 1vh;
   padding-top: 1vh;
+  background-color: #f7e7cb;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: #33333340 3px 3px;
+          box-shadow: #33333340 3px 3px;
 }
 
 div#home_container h3 {
@@ -454,9 +499,18 @@ div#home_container li {
 
 @media screen and (min-width: 800px) {
   div#home_container {
-    -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: "post assignments" "post events";
+  }
+  div#home_container section {
+    border: none;
+  }
+  div#home_container section:nth-of-type(1) {
+    border-right: 1px solid #333333;
+  }
+  div#home_container section:nth-of-type(2) {
+    border-bottom: 1px solid #333333;
   }
   div#home_container #post {
     -ms-grid-row: 1;
@@ -474,5 +528,90 @@ div#home_container li {
     -ms-grid-column: 2;
     grid-area: events;
   }
+}
+
+h1 {
+  text-align: center;
+}
+
+.calendar_time {
+  font-size: 2vh;
+  border-bottom: 1px solid #f7e7cb;
+  padding-bottom: 1vh;
+  padding-top: 2vh;
+}
+
+.calendar_time time {
+  font-weight: 700;
+}
+
+#book_meeting_button {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  #book_meeting_button {
+    width: 25vw;
+  }
+  #calendar_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 95vw;
+    margin: 0 auto;
+  }
+  #calendar_section .container {
+    margin-right: 0.3rem;
+  }
+  #calendar_section .container:last-of-type {
+    margin: 0;
+  }
+  #calendar_section .container .info_title {
+    margin: 0;
+  }
+  .calendar_content {
+    height: 550px;
+    border: 1px solid #f7e7cb;
+  }
+  .calendar_content p {
+    padding: 0.5rem;
+    height: calc(550px / 12);
+  }
+}
+
+#book_container {
+  padding: 4vh;
+}
+
+#book_container form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10rem auto;
+      grid-template-columns: 10rem auto;
+  grid-row-gap: 0.5rem;
+  width: 90vw;
+  max-width: 500px;
+  padding: 2vh;
+  margin: auto;
+  background-color: #f7e7cb;
+  border-radius: 5px;
+}
+
+#book_container input {
+  width: auto;
+}
+
+#book_container option {
+  padding: 0.5vh;
+}
+
+#book_container button {
+  margin-top: 4vh;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 
-    <title>uStudy | Classes</title>
+    <title>uStudy | Book meeting</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -40,30 +40,32 @@
     </header>
 <main>
 
-    <section id="classes">
-        <h1>Classes</h1>
-        <div id="classes_container">
-            <div id="history_2.H" class="class private">
-                <h2>History</h2>
-                <p>2.H</p>
-            </div>
-            <div id="history_1.C" class="class private">
-                <h2>History</h2>
-                <p>1.C</p>
-            </div>
-            <div id="english_2.H" class="class private">
-                <h2>English</h2>
-                <p>2.H</p>
-            </div>
-            <div id="english_1.C" class="class private">
-                <h2>English</h2>
-                <p>1.C</p>
-            </div>
-        </div>
-    </section>
-    
+    <div id="book_container">
+            <form>
+            <label for="participants">Participants:</label>
+            <select name="participants" multiple>
+                <option value="camilla">Camilla B. Nielsen(Consular)</option>
+                <option value="daniel">Daniel Frandsen(Teacher)</option>
+                <option value="line">Line Brix(Teacher)</option>
+                <option value="marina">Marina Jensen(Teacher)</option>
+            </select>
+
+            <label for="date_time">Date and time:</label>
+            <input type="datetime-local" name="date_time">
+
+            <label for="meting_place">Meeting place:</label>
+            <select name="meting_place">
+                <option value="consular_office">Consular Office</option>
+                <option value="pacific">Pacific Meeting Room</option>
+                <option value="arctic">Arctic Meeting Room</option>
+                <option value="atlantic">Atlantic Meeting Room</option>
+            </select>
+            <button id="book_meeting" class="private">Book meeting</button>
+            </form>
+    </div>
+
 </main>
 <footer><p>&copy; uStudy </p></footer>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

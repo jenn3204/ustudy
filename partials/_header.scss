@@ -43,6 +43,23 @@ nav {
   }
 }
 
+.dropdown_style {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: $main_blue;
+  padding: 1rem;
+
+  a {
+    color: $white;
+    margin: 0.2rem;
+
+    &:hover {
+      font-weight: 500;
+    }
+  }
+}
+
 @media screen and (min-width: 800px) {
   #burger_icon {
     display: none;

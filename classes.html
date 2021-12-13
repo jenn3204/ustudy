@@ -19,27 +19,32 @@
         <p id="burger_icon">☰</p>
         <nav id="nav" class="hidden">
             <a href="home.html">Home</a>
-            <a href="classes.html">Classes</a>
+            <a id="classes_nav" href="classes.html">Classes</a>
             <a href="calendar.html">Calendar</a>
-            <a href="messages.html">Messages</a>
-            <a href="profile.html">Profile</a>
+            <a href="">Messages</a>
+            <a href="">Profile</a>
             <a href="index.html">Log out</a>
         </nav>
+        <div id="classes_dropdown" class="hidden">
+            <a href="class.html?class=communication">Communication</a>
+            <a href="class.html?class=negotiation_techniques">Negotiation Techniques</a>
+            <a href="class.html?class=psychology">Psychology</a>
+        </div>
     </header>
 <main>
 
     <section id="classes">
         <h1>Classes</h1>
         <div id="classes_container">
-            <div class="class">
+            <div id="communication" class="class">
                 <h2>Communication</h2>
                 <p>Jens Hansen</p>
             </div>
-            <div class="class">
+            <div id="negotiation_techniques" class="class">
                 <h2>Negotiation Techniques</h2>
                 <p>Hans Jensen</p>
             </div>
-            <div class="class">
+            <div id="psychology" class="class">
                 <h2>Psychology</h2>
                 <p>Jørgen Svendsen</p>
             </div>
@@ -47,7 +52,7 @@
     </section>
     
 </main>
-
+<footer><p>&copy; uStudy </p></footer>
     <script src="script.js"></script>
 </body>
 </html>

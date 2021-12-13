@@ -1,0 +1,27 @@
+#book_container {
+  padding: 4vh;
+
+  form {
+    display: grid;
+    grid-template-columns: 10rem auto;
+    grid-row-gap: 0.5rem;
+    width: 90vw;
+    max-width: 500px;
+    padding: 2vh;
+    margin: auto;
+    background-color: $beige;
+    border-radius: 5px;
+  }
+
+  input {
+    width: auto;
+  }
+
+  option {
+    padding: 0.5vh;
+  }
+
+  button {
+    margin-top: 4vh;
+  }
+}
